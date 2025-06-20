@@ -1,7 +1,7 @@
 flask==2.3.2
 gunicorn==20.1.0
 keras==2.12.0  # Standalone Keras (no TF dependency)
-scikit-learn==1.3.2
+--prefer-binary scikit-learn==1.3.2 
 numpy==1.24.3
 joblib==1.2.0
 protobuf==3.20.3
