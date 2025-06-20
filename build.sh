@@ -41,7 +41,7 @@ print('✓ Keras model loading verified')
 
 # 6. Cleanup
 echo "--- Cleaning build artifacts ---"
-find /usr/local/lib/python3.9 -type d -name '__pycache__' -exec rm -rf {} +
+find /usr/local/lib/python3.12 -type d -name '__pycache__' -exec rm -rf {} +
 rm -rf /root/.cache/pip
 
 echo "=== Keras Build Successful - Ready for Deployment ==="

@@ -1,9 +1,9 @@
 services:
   - type: web
-    name: diabetes-api
+    name: diabetes-prediction-api
     runtime: python
-    buildCommand: "./build.sh"
-    startCommand: "gunicorn index:app"
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.9.13
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn index:app
+    env: python
+    python:
+      version: 3.12.4
