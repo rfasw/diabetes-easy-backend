@@ -279,7 +279,11 @@ def get_specialist_referrals(risk_level):
     
     return referrals
 
-if __name__ == '__main__':
+# Render-specific port binding solution
+def create_app():
+    """Application factory pattern for better port handling"""
     port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port, debug=False)
-    
+    app.run(host='0.0.0.0', port=port)
+
+if __name__ == '__main__':
+    create_app()
